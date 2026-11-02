@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact - book a car</title>
+  <link rel="stylesheet" href="style/style.css">
+</head>
+<body class="contact">
+
+  <!-- HEADER  -->
+  <header>
+    <h1>Rent-a-Car!</h1>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="booking.html">Booking</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="contact.html">contact</a></li>
+        <li><a href="faq.html">FAQ</a></li>
+        <li><a href="feedback.html">feedback</a></li>
+        <li><a href="about us.html">about us</a></li>
+      </ul>
+    </nav>
+    <hr>
+  </header>
+
+
+  <!-- CONTACT -->
+  <section id="contact">
+    <h2>Book your car now</h2>
+    <p>Fill the form and we'll confirm within 15 minutes.</p>
+  
+  
+    <form action="#" method="get">
+      <fieldset>
+        <legend>Reservation details</legend>
+  
+        <label for="fullname">Full name:</label><br>
+        <input type="text" id="fullname" name="fullname" placeholder="Sajida" required><br><br>
+  
+        <label for="email">Email:</label><br>
+        <input type="email" id="email" name="email" placeholder="sajida@riamgamil.com " required><br><br>
+  
+        <label for="phone">Phone:</label><br>
+        <input type="tel" id="phone" name="phone" placeholder="03234 567 890"><br><br>
+  
+        <label for="car-select">Choose a car:</label><br>
+        <select id="car-select" name="car">
+          <option value="picanto">Kia Picanto – 29/day</option>
+          <option value="corolla">Toyota Corolla – 45/day</option>
+          <option value="explorer">Ford Explorer – 79/day</option>
+          <option value="mustang">Ford Mustang – 129/day</option>
+        </select><br><br>
+  
+        <label for="pickup-date">Pick-up date:</label><br>
+        <input type="date" id="pickup-date" name="pickup"><br><br>
+  
+        <label for="return-date">Return date:</label><br>
+        <input type="date" id="return-date" name="return"><br><br>
+  
+        <label for="notes">Special requests:</label><br>
+        <textarea id="notes" name="notes" rows="3" cols="30" placeholder="Child seat, GPS, etc."></textarea><br><br>
+  
+        <input type="checkbox" id="terms" name="terms" required>
+        <label for="terms">I agree to the rental terms and conditions</label><br><br>
+  
+        <button type="submit"> Book now</button>
+        <button type="reset">Reset</button>
+      </fieldset>
+    </form>
+
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+      <p>&copy; 2024 Rent-a-Car. All rights reserved.</p>
+      <p>
+        <a href="privacyPolicy.html">Privacy policy</a> |
+        <a href="termsofuse.html">Terms of use</a> |
+        <a href="sitemap.html">Sitemap</a>
+      </p>
+      <p><small>This is a demo website – no actual bookings are processed.</small></p>
+    </footer>
+
+  
+</body>
+</html>

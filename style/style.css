@@ -1,0 +1,336 @@
+/* =========================================================
+   Rent-a-Car - style.css
+   one file for every page. grey + white, vs code fonts.
+   ========================================================= */
+
+
+/* ---------- GENERAL (all pages) ---------- */
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Consolas, Menlo, Monaco, "Courier New", monospace;
+  font-size: 15px;
+  line-height: 1.7;
+  color: #333;
+  background: #f1f1f1;
+}
+
+/* keeps the content in a centered column */
+header,
+main,
+footer,
+body > #contact,
+body > #feedback {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+h1,
+h2,
+h3 {
+  color: #222;
+  line-height: 1.3;
+}
+
+h2 {
+  font-size: 20px;
+  margin: 30px 0 8px;
+}
+
+h3 {
+  font-size: 16px;
+  margin: 22px 0 6px;
+}
+
+p {
+  margin: 0 0 12px;
+}
+
+ul,
+ol {
+  padding-left: 22px;
+}
+
+a {
+  color: #444;
+}
+
+a:hover {
+  color: #000;
+}
+
+hr {
+  border: 0;
+  border-top: 1px solid #d4d4d4;
+  margin: 28px 0;
+}
+
+img {
+  max-width: 100%;
+}
+
+button {
+  font-family: inherit;
+  font-size: 14px;
+  color: #333;
+  background: #fff;
+  border: 1px solid #888;
+  padding: 7px 16px;
+  margin-right: 6px;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #333;
+  color: #fff;
+  border-color: #333;
+}
+
+/* big picture on top of a page */
+.banner {
+  display: block;
+  width: 100%;
+  height: 280px;
+  object-fit: cover;
+  margin: 16px 0 6px;
+  border-radius: 3px;
+}
+
+
+/* ---------- HEADER + NAV ---------- */
+
+header h1 {
+  font-size: 24px;
+  margin: 26px 0 10px;
+}
+
+nav ul {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px 20px;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+nav a {
+  color: #666;
+  text-decoration: none;
+  padding-bottom: 2px;
+}
+
+nav a:hover {
+  color: #000;
+  border-bottom: 1px solid #000;
+}
+
+header hr {
+  margin: 14px 0 0;
+}
+
+
+/* ---------- FOOTER ---------- */
+
+footer {
+  text-align: center;
+  font-size: 13px;
+  color: #777;
+  padding-top: 10px;
+  padding-bottom: 36px;
+}
+
+footer p {
+  margin-bottom: 4px;
+}
+
+footer a {
+  color: #777;
+}
+
+
+/* ---------- HOME (index.html) ---------- */
+
+.home address {
+  font-style: normal;
+  line-height: 1.8;
+}
+
+.home ol li {
+  margin-bottom: 4px;
+}
+
+
+/* ---------- BOOKING + HOME FLEET (car cards) ---------- */
+
+.cars {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  gap: 18px;
+}
+
+/* heading and intro text span the full row */
+.cars > h2,
+.cars > p {
+  grid-column: 1 / -1;
+  margin-bottom: 0;
+}
+
+.cars article {
+  background: #fff;
+  border: 1px solid #ddd;
+  border-radius: 3px;
+  padding: 14px;
+}
+
+.cars article h3 {
+  margin: 0 0 10px;
+}
+
+.cars article img {
+  display: block;
+  width: 100%;
+  height: 160px;
+  object-fit: cover;
+  background: #e6e6e6;
+}
+
+.cars article ul {
+  list-style: none;
+  padding: 0;
+  margin: 12px 0;
+  font-size: 14px;
+}
+
+.cars article button {
+  width: 100%;
+  margin: 0;
+}
+
+
+/* ---------- SERVICES ---------- */
+
+.services h3 {
+  border-left: 3px solid #999;
+  padding-left: 10px;
+}
+
+
+/* ---------- CONTACT + FEEDBACK (forms) ---------- */
+
+fieldset {
+  background: #fff;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  padding: 18px 24px 24px;
+  margin-top: 16px;
+}
+
+legend {
+  padding: 0 8px;
+  color: #555;
+}
+
+label {
+  font-size: 14px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="date"],
+select,
+textarea {
+  width: 100%;
+  max-width: 420px;
+  margin-top: 4px;
+  padding: 8px 10px;
+  font-family: inherit;
+  font-size: 14px;
+  color: #333;
+  background: #fafafa;
+  border: 1px solid #bbb;
+  border-radius: 3px;
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+  outline: none;
+  border-color: #555;
+  background: #fff;
+}
+
+/* these two pages have no header, so give them some room at the top */
+.feedback #feedback,
+.contact #contact {
+  padding-top: 10px;
+  padding-bottom: 20px;
+}
+
+
+/* ---------- FAQ ---------- */
+
+.faq article {
+  background: #fff;
+  border: 1px solid #ddd;
+  border-radius: 3px;
+  padding: 2px 18px 6px;
+  margin: 10px 0;
+}
+
+.faq article h3 {
+  margin: 12px 0 4px;
+}
+
+.faq article p {
+  margin-bottom: 8px;
+  color: #555;
+}
+
+
+/* ---------- ABOUT US ---------- */
+
+.about ul li {
+  margin-bottom: 4px;
+}
+
+
+/* ---------- PRIVACY POLICY + TERMS OF USE ---------- */
+
+.privacy section,
+.terms section {
+  max-width: 720px;
+}
+
+/* the "last updated" line */
+.privacy section > p:nth-of-type(1),
+.terms section > p:nth-of-type(1) {
+  color: #888;
+  font-size: 13px;
+}
+
+
+/* ---------- SITEMAP ---------- */
+
+.sitemap li {
+  padding: 1px 0;
+}
+
+
+/* ---------- SMALL SCREENS ---------- */
+
+@media (max-width: 600px) {
+  body {
+    font-size: 14px;
+  }
+
+  .banner {
+    height: 180px;
+  }
+}
