@@ -26,52 +26,47 @@
   </header>
 
 
-  <!-- CONTACT -->
-  <section id="contact">
-    <h2>Book your car now</h2>
-    <p>Fill the form and we'll confirm within 15 minutes.</p>
-  
-  
-    <form action="#" method="get">
-      <fieldset>
-        <legend>Reservation details</legend>
-  
-        <label for="fullname">Full name:</label><br>
-        <input type="text" id="fullname" name="fullname" placeholder="Sajida" required><br><br>
-  
-        <label for="email">Email:</label><br>
-        <input type="email" id="email" name="email" placeholder="sajida@riamgamil.com " required><br><br>
-  
-        <label for="phone">Phone:</label><br>
-        <input type="tel" id="phone" name="phone" placeholder="03234 567 890"><br><br>
-  
-        <label for="car-select">Choose a car:</label><br>
-        <select id="car-select" name="car">
-          <option value="picanto">Kia Picanto – 29/day</option>
-          <option value="corolla">Toyota Corolla – 45/day</option>
-          <option value="explorer">Ford Explorer – 79/day</option>
-          <option value="mustang">Ford Mustang – 129/day</option>
-        </select><br><br>
-  
-        <label for="pickup-date">Pick-up date:</label><br>
-        <input type="date" id="pickup-date" name="pickup"><br><br>
-  
-        <label for="return-date">Return date:</label><br>
-        <input type="date" id="return-date" name="return"><br><br>
-  
-        <label for="notes">Special requests:</label><br>
-        <textarea id="notes" name="notes" rows="3" cols="30" placeholder="Child seat, GPS, etc."></textarea><br><br>
-  
-        <input type="checkbox" id="terms" name="terms" required>
-        <label for="terms">I agree to the rental terms and conditions</label><br><br>
-  
-        <button type="submit"> Book now</button>
-        <button type="reset">Reset</button>
-      </fieldset>
-    </form>
+  <!-- CONTACT US -->
+  <section id="contact-us">
+    <h2>Contact us</h2>
+    <p>Questions about a car, a price or a booking? Call, email or send us a message and we will reply the same day.</p>
 
+    <div class="contact-wrap">
+
+      <!-- details -->
+      <dl class="contact-info">
+        <dt>Address</dt>
+        <dd>Malir 15, Metro Stargate,<br>Karachi</dd>
+
+        <dt>Phone</dt>
+        <dd><a href="tel:+923001234567">0300 1234567</a></dd>
+
+        <dt>Email</dt>
+        <dd><a href="mailto:hello@rentacar.example">hello@rentacar.example</a></dd>
+
+        <dt>Hours</dt>
+        <dd>Open 24/7, every day</dd>
+      </dl>
+
+      <!-- message form -->
+      <form action="#" method="get" class="contact-form">
+        <label for="msg-name">Your name</label><br>
+        <input type="text" id="msg-name" name="msg-name" placeholder="Your name" required><br>
+
+        <label for="msg-email">Email</label><br>
+        <input type="email" id="msg-email" name="msg-email" placeholder="you@example.com" required><br>
+
+        <label for="msg-text">Message</label><br>
+        <textarea id="msg-text" name="msg-text" rows="5" placeholder="How can we help?" required></textarea><br>
+
+        <button type="submit">Send message</button>
+      </form>
+
+    </div>
+    <hr>
   </section>
 
+  
   <!-- FOOTER -->
   <footer>
       <p>&copy; 2024 Rent-a-Car. All rights reserved.</p>

@@ -1,10 +1,4 @@
-/* =========================================================
-   Rent-a-Car - style.css
-   one file for every page. grey + white, vs code fonts.
-   ========================================================= */
 
-
-/* ---------- GENERAL (all pages) ---------- */
 
 * {
   box-sizing: border-box;
@@ -12,7 +6,7 @@
 
 body {
   margin: 0;
-  font-family: Consolas, Menlo, Monaco, "Courier New", monospace;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   font-size: 15px;
   line-height: 1.7;
   color: #333;
@@ -24,6 +18,7 @@ header,
 main,
 footer,
 body > #contact,
+body > #contact-us,
 body > #feedback {
   max-width: 900px;
   margin: 0 auto;
@@ -266,6 +261,42 @@ textarea:focus {
   background: #fff;
 }
 
+/* contact us block (top of contact.html) */
+.contact-wrap {
+  display: grid;
+  grid-template-columns: 1fr 1.4fr;
+  gap: 30px;
+  margin-top: 18px;
+}
+
+.contact-info {
+  margin: 0;
+  padding: 18px 22px;
+  background: #fff;
+  border: 1px solid #ddd;
+  border-radius: 3px;
+  align-self: start;
+}
+
+.contact-info dt {
+  font-size: 13px;
+  color: #888;
+}
+
+.contact-info dd {
+  margin: 0 0 14px;
+}
+
+.contact-info dd:last-child {
+  margin-bottom: 0;
+}
+
+.contact-form input,
+.contact-form textarea {
+  margin-bottom: 14px;
+  max-width: none;
+}
+
 /* these two pages have no header, so give them some room at the top */
 .feedback #feedback,
 .contact #contact {
@@ -332,5 +363,9 @@ textarea:focus {
 
   .banner {
     height: 180px;
+  }
+
+  .contact-wrap {
+    grid-template-columns: 1fr;
   }
 }
